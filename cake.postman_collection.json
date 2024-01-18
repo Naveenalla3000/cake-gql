@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "8aa94da0-aa16-4339-bed3-434665bc0f52",
+		"name": "cake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26433196",
+		"_collection_link": "https://bold-flare-148281.postman.co/workspace/prisma~fa30079b-5b2b-4dbc-96e9-66a14f00b7db/collection/26433196-8aa94da0-aa16-4339-bed3-434665bc0f52?action=share&source=collection_link&creator=26433196"
+	},
+	"item": [
+		{
+			"name": "getAllCakes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/cake/all",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cake",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewCake",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ng cake\",\r\n    \"price\":1600,\r\n    \"flavor\":\"Chocolate\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/cake/new",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cake",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCakeById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "updateCake",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"aksp cake\",\r\n    \"price\":1600,\r\n    \"flavor\":\"Chocolate\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/cake/5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cake",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCake",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
